@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Monk's Cafe</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+
+    <header>
+      <h1>Monk's Cafe</h1>
+      <h2 id="slogan">"The Coffee Shop"</h2> 
+      <figure>  
+          <img src="images/toms-restaurant.jpg" alt= "seinfeld restaurant" title= "tom's restaurant">
+        </figure>
+    </header> 
+
+    <h2 id="res"> Reservations</h2>
+
+    <section id="two_column" class="clearfix">
+    
+
+      <form id="left" action="/action_page.php" class="Reservations">
+      <h2 id="make"> Make a Reservation</h2>
+        First name:<br>
+        <input type="text" name="firstname" value="First Name">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Last Name">
+        <br><br>
+        <input type="submit" value="Confirm Reservation">
+      </form> 
+      
+      <table id="right" class="Existing">
+      <h2 id="exres"> Existing Reservations</h2>
+        <tr>
+          <th>Name</th>
+          <th>Day</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+    </section>
+
+<section id="find">
+
+    <h2 id="dine">Come Dine With Us</h2>
+
+<div id="map"></div>
+
+</section>
+
+<section id="jerry review">
+<img id="jerry" src="images/jerry.jpg" alt= "george and jerry" title= "inside monk's">
+<h2 id="reviews">Customer Reviews</h2>
+<p id="salad"> "Big lettuce, big carrots, tomatoes like volleyballs."</p>
+<p id="jerryrev">-Jerry Seinfeld, on The BIG Salad</p>
+</section>
+
+<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+     <script src="js/main.js"></script> 
+     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIwOljRK5GSTuio5zQzjN0il0T2ytG9sE&callback=initMap">
+    </script>
+  </body>
+</html>
+
+    
+
+
+  

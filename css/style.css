@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Montserrat|Roboto+Condensed');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	text-align: center;
+	border: 1px black solid;
+	padding: .1em;
+	margin: .1em;
+	border: solid 5px black;
+	background-color: white;
+}
+
+h1 {
+	font-family: 'Bitter', serif;
+	font-size: 4em;
+	font-weight: normal;
+	padding: 1.5% .2em;
+	letter-spacing: .001em;
+	color: #FF3B30;
+}
+
+#slogan {
+	font-style: italic;
+	font-size: 2em;
+	padding-bottom: .6em;
+	margin: 0 10 20 10;
+	letter-spacing: .01em;
+	color: #FF3B30;
+}
+
+
+img {
+	width: 100%;
+}
+
+/*table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}*/
+
+#res {
+	font-size: 3em;
+	text-align: center;
+	color: #FF3B30;
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+#two_column {
+	background-color: white;
+	border: 1% black solid;
+	padding: /*2%*/ .3em;
+}
+
+#left {
+	background-color: white;
+	border: 1px black solid;
+	padding: .1em;
+	float: left;
+	width: 48%;
+	text-align: left;
+}
+
+#make {
+	text-align: center;
+}
+
+#right {
+	color: black;
+	background-color: white;
+	border: 1px black solid;
+	border-collapse: collapse;
+	padding: .6em;
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+
+#exres {
+	text-align: center;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#dine {
+	text-align: center;
+	font-size: 3em;
+	padding-top: 5em;
+	padding-bottom: .5em;
+	margin: 0 10 20 10;
+	letter-spacing: .01em;
+	color: #FF3B30;
+}
+
+#map {
+        height: 400px;
+        width: 100%;    
+}
+
+#reviews {
+	text-align: center;
+	padding-top: .6em;
+	font-size: 3em;
+	padding-bottom: .6em;
+	margin: 0 10 20 10;
+	letter-spacing: .01em;
+	color: #FF3B30;
+}
+
+#salad {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#jerryrev {
+	padding-bottom: 2em;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#jerry {
+	float: left;
+	width: 50%;
+}
