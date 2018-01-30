@@ -1,86 +1,65 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Monk's Cafe</title>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Monk's Cafe</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
 
     <header>
       <h1>Monk's Cafe</h1>
       <h2 id="slogan">"The Coffee Shop"</h2> 
       <figure>  
-          <img src="images/toms-restaurant.jpg" alt= "seinfeld restaurant" title= "tom's restaurant">
-        </figure>
+        <a href="http://www.tomsrestaurant.net"> <img src="images/toms-restaurant.jpg" alt= "seinfeld restaurant" title= "tom's restaurant"></a>
+      </figure>
     </header> 
 
-    <h2 id="res"> Reservations</h2>
+    <h2>Reservations</h2>
 
-    <section id="two_column" class="clearfix">
-    
+    <div id="reservations">
+      <form name="reservation-form" action="" method="get">
+        <label for="name">Name</label>
+        <input type="text" id="reservation-name" name="firstlastname" placeholder="John Doe..">
 
-      <form id="left" action="/action_page.php" class="Reservations">
-      <h2 id="make"> Make a Reservation</h2>
-        First name:<br>
-        <input type="text" name="firstname" value="First Name">
-        <br>
-        Last name:<br>
-        <input type="text" name="lastname" value="Last Name">
-        <br><br>
-        <input type="submit" value="Confirm Reservation">
-      </form> 
-      
-      <table id="right" class="Existing">
-      <h2 id="exres"> Existing Reservations</h2>
-        <tr>
-          <th>Name</th>
-          <th>Day</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+        <label for="day">Day</label>
+        <select id="reservation-day li" name="daydate">
+          <option value="today">Today</option>
+          <option value="tomorrow">Tomorrow</option>
+          <option value="next">The next day</option>
+        </select>
+  
+        <input type="submit" value="Confirm Reservation" onclick="msg()">
+      </form>
+    </div>
 
+
+    <section id="find">
+      <h2 id="dine">Come Dine With Us</h2>
+      <div id="map"></div>
     </section>
 
-<section id="find">
+    <section id="jerry review">
+      <img id="jerry" src="images/jerry.jpg" alt= "george and jerry" title= "inside monk's">
+      <h2 id="reviews">Customer Reviews</h2>
+      <p id="salad"> "Big lettuce, big carrots, tomatoes like volleyballs."</p>
+      <p id="jerryrev">-Jerry Seinfeld, on The BIG Salad</p>
+    </section>
 
-    <h2 id="dine">Come Dine With Us</h2>
+    <ul class="bookings">
+      <script id="reservation-template" type="text/x-handlebars-template">
+        <li>{{name}}</li>
+        <li>{{day}}</li>
+      </script>  
 
-<div id="map"></div>
-
-</section>
-
-<section id="jerry review">
-<img id="jerry" src="images/jerry.jpg" alt= "george and jerry" title= "inside monk's">
-<h2 id="reviews">Customer Reviews</h2>
-<p id="salad"> "Big lettuce, big carrots, tomatoes like volleyballs."</p>
-<p id="jerryrev">-Jerry Seinfeld, on The BIG Salad</p>
-</section>
-
-<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
-     <script src="js/main.js"></script> 
-     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIwOljRK5GSTuio5zQzjN0il0T2ytG9sE&callback=initMap">
-    </script>
+    
+      <!-- your stuff here -->
+     
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIwOljRK5GSTuio5zQzjN0il0T2ytG9sE"></script>
+    <script src="js/handlebars-v4.0.11.js"></script> 
+    <script src="js/main.js"></script> 
   </body>
 </html>
 
