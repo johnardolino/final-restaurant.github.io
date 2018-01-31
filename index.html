@@ -18,12 +18,12 @@
     <h2>Reservations</h2>
 
     <div id="reservations">
-      <form name="reservation-form" action="" method="get">
+      <form id="reservation-form" name="reservation-form" action="" method="get">
         <label for="name">Name</label>
         <input type="text" id="reservation-name" name="firstlastname" placeholder="John Doe..">
 
         <label for="day">Day</label>
-        <select id="reservation-day li" name="daydate">
+        <select id="reservation-day" name="daydate">
           <option value="today">Today</option>
           <option value="tomorrow">Tomorrow</option>
           <option value="next">The next day</option>
@@ -33,6 +33,37 @@
       </form>
     </div>
 
+    <!-- <ul class="bookings"></ul> -->
+
+    <table class="bookings">
+      <tr>
+        <h3>Reservation List</h3>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Day</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>   
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
 
     <section id="find">
       <h2 id="dine">Come Dine With Us</h2>
@@ -46,14 +77,11 @@
       <p id="jerryrev">-Jerry Seinfeld, on The BIG Salad</p>
     </section>
 
-    <ul class="bookings">
-      <script id="reservation-template" type="text/x-handlebars-template">
-        <li>{{name}}</li>
-        <li>{{day}}</li>
-      </script>  
-
     
-      <!-- your stuff here -->
+    <script id="reservation-template" type="text/x-handlebars-template">
+      <li>{{name}}</li>
+      <li>{{day}}</li>
+    </script>
      
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>

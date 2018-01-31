@@ -128,14 +128,12 @@ var database = firebase.database();
 
 var reservationData = {};
 
-$('.reservation-day li').on('click', function() {
-  reservationData.day = $(this).text();
-});
 
-$('.reservation-form').on('submit', function(event) {
+$('#reservation-form').on('submit', function(event) {
   event.preventDefault();
 
-  reservationData.name = $('.reservation-name').val();
+  reservationData.name = $('#reservation-name').val();
+  reservationData.day = $('#reservation-day').val();
 
 
 // create a section for reservations data in your db
@@ -155,7 +153,7 @@ database.ref('reservations').on('value', function(results) {
 var allReservations = results.val();
 
   // remove all list reservations from DOM before appending list reservations
-  $('.reservations').empty();
+  $('.bookings').empty();
 
   // iterate (loop) through all reservations coming from database call
   for (var reservation in allReservations) {
@@ -175,10 +173,10 @@ var source = $("#reservation-template").html();
 var template = Handlebars.compile(source);
 
 // Pass the data for this reservation (context) into the template
-var newListItem = template(userInput);
+var newListItem = template(context);
 
 // Append newly created reservation to reservations list.
-    $('.reservations').append(newListItem);
+    $('.bookings').append(newListItem);
     }
   });
 }
