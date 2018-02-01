@@ -24,9 +24,9 @@
 
         <label for="day">Day</label>
         <select id="reservation-day" name="daydate">
-          <option value="today">Today</option>
-          <option value="tomorrow">Tomorrow</option>
-          <option value="next">The next day</option>
+          <option value="Today">Today</option>
+          <option value="Tomorrow">Tomorrow</option>
+          <option value="Next Day">The next day</option>
         </select>
   
         <input type="submit" value="Confirm Reservation" onclick="msg()">
@@ -36,32 +36,12 @@
     <!-- <ul class="bookings"></ul> -->
 
     <table class="bookings">
-      <tr>
+      <tr id="list">
         <h3>Reservation List</h3>
       </tr>
-      <tr>
+      <tr id="title">
         <td>Name</td>
         <td>Day</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>   
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
       </tr>
     </table>
 
@@ -79,8 +59,10 @@
 
     
     <script id="reservation-template" type="text/x-handlebars-template">
-      <li>{{name}}</li>
-      <li>{{day}}</li>
+      <tr>
+        <td>{{name}}</td>
+        <td>{{day}}</td>
+      </tr>
     </script>
      
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>

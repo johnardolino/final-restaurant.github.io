@@ -142,6 +142,14 @@ var reservationsReference = database.ref('reservations');
   reservationsReference.push(reservationData);
 });
 
+// function validateForm() {
+//   var x = document.forms["#reservation-form"]["#firstlastname"].value;
+//   if (x == "") {
+//     alert("Name must be filled out");
+//     return false;
+//   }
+// }
+
 
 // retrieve reservations data when page loads and when reservations are added
 function getReservations() {

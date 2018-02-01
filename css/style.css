@@ -60,6 +60,7 @@ h2 {
 h3 {
   text-align: center;
   color: #FF3B30;
+  font-size: 3em;
 }
 
 input[type=text], select {
@@ -106,8 +107,16 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: red;
 }
+}
+
+#list {
+	font-size: 1.5em;
+}
+
+#title {
+	padding-bottom: 1em;
 }
 
 #dine {
